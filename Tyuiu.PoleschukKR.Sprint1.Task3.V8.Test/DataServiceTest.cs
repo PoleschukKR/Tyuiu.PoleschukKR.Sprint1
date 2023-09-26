@@ -16,8 +16,9 @@ namespace Tyuiu.PoleschukKR.Sprint1.Task3.V8.Test
             DataService ds = new DataService();
             double percent = 20;
             double timeDays = 73;
+            double startAmount = 2500;
             double wait = 100;
-            var res = ds.IncomeAmount(percent, timeDays);
+            var res = ds.IncomeAmount(percent, timeDays, startAmount);
             Assert.AreEqual(wait, res);
         }
     }
