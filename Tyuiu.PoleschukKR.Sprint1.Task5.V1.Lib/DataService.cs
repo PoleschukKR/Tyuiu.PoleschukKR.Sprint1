@@ -12,14 +12,10 @@ namespace Tyuiu.PoleschukKR.Sprint1.Task5.V1.Lib
     {
         public int DistanceBetweenDots(double x1, double y1, double x2, double y2)
         {
-           double xx = x1 - x2;
-           double yy = y1 - y2;
-           double x = Math.Pow(xx, 2);
-           double y = Math.Pow(yy, 2);
-           double sqr = Math.Sqrt(x + y);
-           int res = Convert.ToInt32(sqr);
-           
-            return res;
+            double res = Math.Sqrt((Math.Pow(Math.Abs(x1 - x2), 2)) + (Math.Pow(Math.Abs(y1 - y2), 2)));
+            int result = Convert.ToInt32(res);
+
+            return result;
         }
     }
 }
